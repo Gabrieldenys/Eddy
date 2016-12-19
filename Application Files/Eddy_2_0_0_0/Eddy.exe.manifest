@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Eddy.exe" version="2.0.0.0" publicKeyToken="57e4145e88432363" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="favicon (3).ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Eddy" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Eddy.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AxInterop.WMPLib.dll" size="53760">
+      <assemblyIdentity name="AxInterop.WMPLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>2NKzutjQ0frSuDJjvZMHDJiUEomLKGYsetitjzbQn2I=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Eddy.exe" size="406488">
+      <assemblyIdentity name="Eddy" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>cVRMngmc6917/Y+5ayQn94aeoQRHvkxabvfU1F/RlwI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.WMPLib.dll" size="330752">
+      <assemblyIdentity name="Interop.WMPLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>3m6visi3lKPu8zel8XD8ZMSNuuQNyw8YZihIlO9OrK0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="document-new.png" size="1008">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>pA0pz79WJO1UO0GnUB/LPxd5LryVh5jl4gATrPE+NJc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Eddy.exe.config" size="161">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+K0Xw31ERSGzkFzL116my249J2OxbrVrLhqkJ0Fz5hQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="favicon (2).ico" size="15086">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>b+zHKLqdfq1duuK6zzapsnwkqFGGovHZcOnT5l8Ev8Y=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="favicon (3).ico" size="99678">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>weMyP13eCfngDoZY6OEQLrBglO2K4dlzcbiJ2WVZECU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="favicon.ico" size="5430">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>y/TzlklNrjwBen3Pjo1mEMLuM9bSQnIqBoVv6EiBlc8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="program.ico" size="167271">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>qnqfW9OsjCYVmojMkQb4MMwA3LpsXhfhdTA8V9reXLE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Properties\format-justify-center.png" size="526">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>bMgJyP3VJYlNCRLuRUqZt4S4YU1D8oADSzGO6fF2Z4Y=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=GABRIELS-PC\Gabriel" issuerKeyHash="b963f30c28f38ace1ce19b412897262b89ab5a65" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>M7gT4kqv6QqZdoTsuQDlDlJ1rSf5z7VuHereewq2jbU=</DigestValue></Reference></SignedInfo><SignatureValue>RdSrNh0Y4wuUyDaLYX+n/y1pcfPyPK1YBWbhhTFLkINBNSXD3RGPVmhz9QcqGh8lmquWXDWL/88etgbUocYQRhSPNc3meFbDqHhXwZCL7MGrbETE7QBsV0PHdCBqrnp4psueS9OiRXGUcbCYCY173BXfcJTB+eiDd6wsUO0TSuc=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>tORsTpQCAf4+xRKYmIRYtUXSLZKk5Y50yjCpBMVXvvvxue6A3rd/Pq2o99elYoA5Uf0fG7YNfMtUg/G9jqja2rFIMzIpGKKdckGoyS4ui6NIIGn6jJX9qL23QvKFhf0hKMUFl/Rjj+aNpXpqHLbqOb1Uvkpj5dtlObD4UCFaYC0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="b58db60a7bdeea1d6eb5cff927ad75520ee500b9ec8476990ae9af4ae213b833" Description="" Url=""><as:assemblyIdentity name="Eddy.exe" version="2.0.0.0" publicKeyToken="57e4145e88432363" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=GABRIELS-PC\Gabriel</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>UCrrbStinz3tSFcpdLCjUP2ltSWlmFAQG2G75I0+0gs=</DigestValue></Reference></SignedInfo><SignatureValue>mPiIa0CUjj070TuaD06JKxam8J1nZUXph/AQeYgA9y30QcO/nrZkpJOw6PtMPZwvRWbJXtpi52Zs2JRYQNIjdRE5tHVpMPwaKulon3aL7UN96lriqdpAUGs7UTT/apMy5xIzuBlYHH/57gptsQhZM4IVcO2yr0EBYiJv8L80O7c=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>tORsTpQCAf4+xRKYmIRYtUXSLZKk5Y50yjCpBMVXvvvxue6A3rd/Pq2o99elYoA5Uf0fG7YNfMtUg/G9jqja2rFIMzIpGKKdckGoyS4ui6NIIGn6jJX9qL23QvKFhf0hKMUFl/Rjj+aNpXpqHLbqOb1Uvkpj5dtlObD4UCFaYC0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB5TCCAU6gAwIBAgIQFYYAFnudWrZHsX4qdtitEDANBgkqhkiG9w0BAQsFADAxMS8wLQYDVQQDHiYARwBBAEIAUgBJAEUATABTAC0AUABDAFwARwBhAGIAcgBpAGUAbDAeFw0xNjEyMTcxNDA5NTRaFw0xNzEyMTcyMDA5NTRaMDExLzAtBgNVBAMeJgBHAEEAQgBSAEkARQBMAFMALQBQAEMAXABHAGEAYgByAGkAZQBsMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC05GxOlAIB/j7FEpiYhFi1RdItkqTljnTKMKkExVe++/G57oDet38+raj316VigDlR/R8btg18y1SD8b2OqNrasUgzMikYop1yQajJLi6Lo0ggafqMlf2ovbdC8oWF/SEoxQWX9GOP5o2lemoctuo5vVS+SmPl22U5sPhQIVpgLQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAE6VyV0gWw2g0A8XzV4fXna8mYO5F4IyfcDX9DijiAEcDKzlDA6TnBg/drLFUJSoxalYFShsHYtatW69ks5dXz20x5bRN9x2cAqR8Uq5JHoED58OI+3ECJGMXGiW0EHd/CXEedJMRY7VwUSeg8XzWw0g1yOI1dyE5v4Fc09TiwQ4</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
