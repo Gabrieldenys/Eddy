@@ -34,7 +34,7 @@
     <WebPage>publish.htm</WebPage>
     <AutorunEnabled>true</AutorunEnabled>
     <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>2.0.0.0</ApplicationVersion>
+    <ApplicationVersion>3.0.0.0</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -62,10 +62,10 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>favicon %283%29.ico</ApplicationIcon>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>89CF18084429E249C647160170DFF8A428F937C4</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>9960B233AA6B1F19891202F4D5C44A515E26434A</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestKeyFile>Kodi_M3U_IPTV_Editor_1_TemporaryKey.pfx</ManifestKeyFile>
@@ -170,8 +170,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="document-new.png" />
-    <Content Include="favicon %282%29.ico" />
-    <Content Include="favicon %283%29.ico" />
     <Content Include="favicon.ico" />
     <Content Include="program.ico" />
     <Content Include="Properties\format-justify-center.png" />

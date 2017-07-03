@@ -33,26 +33,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Editor));
             this.menuStrip = new System.Windows.Forms.MenuStrip();
-            this.newListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.openFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.openURLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripNew1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripRemove = new System.Windows.Forms.ToolStripButton();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.documentationHowToToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripOpenFile = new System.Windows.Forms.ToolStripButton();
-            this.toolStripOpenURL = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSave = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripDuplicate = new System.Windows.Forms.ToolStripButton();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.channelsGrid = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -72,6 +59,19 @@
             this.saveFile = new System.Windows.Forms.SaveFileDialog();
             this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.newListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openURLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripNew1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripRemove = new System.Windows.Forms.ToolStripButton();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripOpenFile = new System.Windows.Forms.ToolStripButton();
+            this.toolStripOpenURL = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSave = new System.Windows.Forms.ToolStripButton();
+            this.toolStripDuplicate = new System.Windows.Forms.ToolStripButton();
             this.menuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -101,67 +101,10 @@
             this.menuStrip.Text = "menuStrip1";
             this.menuStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip_ItemClicked);
             // 
-            // newListToolStripMenuItem
-            // 
-            this.newListToolStripMenuItem.Image = global::Kodi_M3U_IPTV_Editor.Properties.Resources.file;
-            this.newListToolStripMenuItem.Name = "newListToolStripMenuItem";
-            this.newListToolStripMenuItem.Size = new System.Drawing.Size(80, 23);
-            this.newListToolStripMenuItem.Text = "New List";
-            this.newListToolStripMenuItem.Click += new System.EventHandler(this.newListToolStripMenuItem_Click);
-            // 
-            // openFileToolStripMenuItem
-            // 
-            this.openFileToolStripMenuItem.Image = global::Kodi_M3U_IPTV_Editor.Properties.Resources.folder_1;
-            this.openFileToolStripMenuItem.Name = "openFileToolStripMenuItem";
-            this.openFileToolStripMenuItem.Size = new System.Drawing.Size(94, 23);
-            this.openFileToolStripMenuItem.Text = "&Open List...";
-            this.openFileToolStripMenuItem.Click += new System.EventHandler(this.openPlaylist);
-            // 
-            // saveToolStripMenuItem
-            // 
-            this.saveToolStripMenuItem.Image = global::Kodi_M3U_IPTV_Editor.Properties.Resources.floppy_disk;
-            this.saveToolStripMenuItem.MergeIndex = 1;
-            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(82, 23);
-            this.saveToolStripMenuItem.Text = "&Save as...";
-            this.saveToolStripMenuItem.Click += new System.EventHandler(this.savePlaylist);
-            // 
-            // openURLToolStripMenuItem
-            // 
-            this.openURLToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("openURLToolStripMenuItem.Image")));
-            this.openURLToolStripMenuItem.Name = "openURLToolStripMenuItem";
-            this.openURLToolStripMenuItem.Size = new System.Drawing.Size(97, 23);
-            this.openURLToolStripMenuItem.Text = "Open &URL...";
-            this.openURLToolStripMenuItem.Click += new System.EventHandler(this.openURL);
-            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 23);
-            // 
-            // toolStripNew1
-            // 
-            this.toolStripNew1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripNew1.Enabled = false;
-            this.toolStripNew1.Image = global::Kodi_M3U_IPTV_Editor.Properties.Resources.plus;
-            this.toolStripNew1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripNew1.Margin = new System.Windows.Forms.Padding(5, 1, 0, 2);
-            this.toolStripNew1.Name = "toolStripNew1";
-            this.toolStripNew1.Size = new System.Drawing.Size(23, 20);
-            this.toolStripNew1.Text = "New Channel";
-            this.toolStripNew1.Click += new System.EventHandler(this.toolStripNew_Click);
-            // 
-            // toolStripRemove
-            // 
-            this.toolStripRemove.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripRemove.Enabled = false;
-            this.toolStripRemove.Image = global::Kodi_M3U_IPTV_Editor.Properties.Resources.minus;
-            this.toolStripRemove.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripRemove.Margin = new System.Windows.Forms.Padding(5, 1, 0, 2);
-            this.toolStripRemove.Name = "toolStripRemove";
-            this.toolStripRemove.Size = new System.Drawing.Size(23, 20);
-            this.toolStripRemove.Text = "Remove Channel";
-            this.toolStripRemove.Click += new System.EventHandler(this.toolStripRemove_Click);
             // 
             // fileToolStripMenuItem
             // 
@@ -175,14 +118,6 @@
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
             // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Image = global::Kodi_M3U_IPTV_Editor.Properties.Resources.file_1;
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.exitToolStripMenuItem.Text = "&Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -192,14 +127,6 @@
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "&Help";
             // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.Image = global::Kodi_M3U_IPTV_Editor.Properties.Resources.file_1;
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
-            this.aboutToolStripMenuItem.Text = "&About";
-            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
-            // 
             // documentationHowToToolStripMenuItem
             // 
             this.documentationHowToToolStripMenuItem.Name = "documentationHowToToolStripMenuItem";
@@ -207,71 +134,15 @@
             this.documentationHowToToolStripMenuItem.Text = "Documentation(How To)";
             this.documentationHowToToolStripMenuItem.Click += new System.EventHandler(this.documentationHowToToolStripMenuItem_Click);
             // 
-            // toolStripButton1
-            // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = global::Kodi_M3U_IPTV_Editor.Properties.Resources.file;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(28, 28);
-            this.toolStripButton1.Text = "toolStripButton1";
-            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
-            // 
-            // toolStripOpenFile
-            // 
-            this.toolStripOpenFile.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripOpenFile.Image = global::Kodi_M3U_IPTV_Editor.Properties.Resources.folder_1;
-            this.toolStripOpenFile.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripOpenFile.Name = "toolStripOpenFile";
-            this.toolStripOpenFile.Size = new System.Drawing.Size(28, 28);
-            this.toolStripOpenFile.Text = "Open &File...";
-            this.toolStripOpenFile.Click += new System.EventHandler(this.openPlaylist);
-            // 
-            // toolStripOpenURL
-            // 
-            this.toolStripOpenURL.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripOpenURL.Image = global::Kodi_M3U_IPTV_Editor.Properties.Resources.planet_earth;
-            this.toolStripOpenURL.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripOpenURL.Margin = new System.Windows.Forms.Padding(5, 1, 5, 2);
-            this.toolStripOpenURL.Name = "toolStripOpenURL";
-            this.toolStripOpenURL.Size = new System.Drawing.Size(28, 28);
-            this.toolStripOpenURL.Text = "Open &URL...";
-            this.toolStripOpenURL.Click += new System.EventHandler(this.openURL);
-            // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(6, 31);
             // 
-            // toolStripSave
-            // 
-            this.toolStripSave.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripSave.Enabled = false;
-            this.toolStripSave.Image = global::Kodi_M3U_IPTV_Editor.Properties.Resources.floppy_disk;
-            this.toolStripSave.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripSave.Margin = new System.Windows.Forms.Padding(5, 1, 5, 2);
-            this.toolStripSave.Name = "toolStripSave";
-            this.toolStripSave.Size = new System.Drawing.Size(28, 28);
-            this.toolStripSave.Text = "&Save";
-            this.toolStripSave.Click += new System.EventHandler(this.savePlaylist);
-            // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
             this.toolStripSeparator4.Size = new System.Drawing.Size(6, 31);
-            // 
-            // toolStripDuplicate
-            // 
-            this.toolStripDuplicate.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.toolStripDuplicate.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripDuplicate.Enabled = false;
-            this.toolStripDuplicate.Image = global::Kodi_M3U_IPTV_Editor.Properties.Resources.edit;
-            this.toolStripDuplicate.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripDuplicate.Margin = new System.Windows.Forms.Padding(5, 1, 0, 2);
-            this.toolStripDuplicate.Name = "toolStripDuplicate";
-            this.toolStripDuplicate.Size = new System.Drawing.Size(28, 28);
-            this.toolStripDuplicate.Text = "Duplicate Channel";
-            this.toolStripDuplicate.Click += new System.EventHandler(this.toolStripDuplicate_Click);
             // 
             // splitContainer1
             // 
@@ -463,6 +334,135 @@
             this.openFileDialog1.Filter = "Playlist Files (*.m3u)|*.m3u";
             this.openFileDialog1.Title = "Open Playlist";
             this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
+            // 
+            // newListToolStripMenuItem
+            // 
+            this.newListToolStripMenuItem.Image = global::Kodi_M3U_IPTV_Editor.Properties.Resources.file;
+            this.newListToolStripMenuItem.Name = "newListToolStripMenuItem";
+            this.newListToolStripMenuItem.Size = new System.Drawing.Size(80, 23);
+            this.newListToolStripMenuItem.Text = "New List";
+            this.newListToolStripMenuItem.Click += new System.EventHandler(this.newListToolStripMenuItem_Click);
+            // 
+            // openFileToolStripMenuItem
+            // 
+            this.openFileToolStripMenuItem.Image = global::Kodi_M3U_IPTV_Editor.Properties.Resources.folder_1;
+            this.openFileToolStripMenuItem.Name = "openFileToolStripMenuItem";
+            this.openFileToolStripMenuItem.Size = new System.Drawing.Size(94, 23);
+            this.openFileToolStripMenuItem.Text = "&Open List...";
+            this.openFileToolStripMenuItem.Click += new System.EventHandler(this.openPlaylist);
+            // 
+            // saveToolStripMenuItem
+            // 
+            this.saveToolStripMenuItem.Image = global::Kodi_M3U_IPTV_Editor.Properties.Resources.floppy_disk;
+            this.saveToolStripMenuItem.MergeIndex = 1;
+            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(82, 23);
+            this.saveToolStripMenuItem.Text = "&Save as...";
+            this.saveToolStripMenuItem.Click += new System.EventHandler(this.savePlaylist);
+            // 
+            // openURLToolStripMenuItem
+            // 
+            this.openURLToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("openURLToolStripMenuItem.Image")));
+            this.openURLToolStripMenuItem.Name = "openURLToolStripMenuItem";
+            this.openURLToolStripMenuItem.Size = new System.Drawing.Size(97, 23);
+            this.openURLToolStripMenuItem.Text = "Open &URL...";
+            this.openURLToolStripMenuItem.Click += new System.EventHandler(this.openURL);
+            // 
+            // toolStripNew1
+            // 
+            this.toolStripNew1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripNew1.Enabled = false;
+            this.toolStripNew1.Image = global::Kodi_M3U_IPTV_Editor.Properties.Resources.plus;
+            this.toolStripNew1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripNew1.Margin = new System.Windows.Forms.Padding(5, 1, 0, 2);
+            this.toolStripNew1.Name = "toolStripNew1";
+            this.toolStripNew1.Size = new System.Drawing.Size(23, 20);
+            this.toolStripNew1.Text = "New Channel";
+            this.toolStripNew1.Click += new System.EventHandler(this.toolStripNew_Click);
+            // 
+            // toolStripRemove
+            // 
+            this.toolStripRemove.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripRemove.Enabled = false;
+            this.toolStripRemove.Image = global::Kodi_M3U_IPTV_Editor.Properties.Resources.minus;
+            this.toolStripRemove.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripRemove.Margin = new System.Windows.Forms.Padding(5, 1, 0, 2);
+            this.toolStripRemove.Name = "toolStripRemove";
+            this.toolStripRemove.Size = new System.Drawing.Size(23, 20);
+            this.toolStripRemove.Text = "Remove Channel";
+            this.toolStripRemove.Click += new System.EventHandler(this.toolStripRemove_Click);
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Image = global::Kodi_M3U_IPTV_Editor.Properties.Resources.file_1;
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
+            this.aboutToolStripMenuItem.Text = "&About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Image = global::Kodi_M3U_IPTV_Editor.Properties.Resources.file_1;
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Text = "&Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = global::Kodi_M3U_IPTV_Editor.Properties.Resources.file;
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(28, 28);
+            this.toolStripButton1.Text = "toolStripButton1";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
+            // toolStripOpenFile
+            // 
+            this.toolStripOpenFile.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripOpenFile.Image = global::Kodi_M3U_IPTV_Editor.Properties.Resources.folder_1;
+            this.toolStripOpenFile.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripOpenFile.Name = "toolStripOpenFile";
+            this.toolStripOpenFile.Size = new System.Drawing.Size(28, 28);
+            this.toolStripOpenFile.Text = "Open &File...";
+            this.toolStripOpenFile.Click += new System.EventHandler(this.openPlaylist);
+            // 
+            // toolStripOpenURL
+            // 
+            this.toolStripOpenURL.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripOpenURL.Image = global::Kodi_M3U_IPTV_Editor.Properties.Resources.planet_earth;
+            this.toolStripOpenURL.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripOpenURL.Margin = new System.Windows.Forms.Padding(5, 1, 5, 2);
+            this.toolStripOpenURL.Name = "toolStripOpenURL";
+            this.toolStripOpenURL.Size = new System.Drawing.Size(28, 28);
+            this.toolStripOpenURL.Text = "Open &URL...";
+            this.toolStripOpenURL.Click += new System.EventHandler(this.openURL);
+            // 
+            // toolStripSave
+            // 
+            this.toolStripSave.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripSave.Enabled = false;
+            this.toolStripSave.Image = global::Kodi_M3U_IPTV_Editor.Properties.Resources.floppy_disk;
+            this.toolStripSave.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripSave.Margin = new System.Windows.Forms.Padding(5, 1, 5, 2);
+            this.toolStripSave.Name = "toolStripSave";
+            this.toolStripSave.Size = new System.Drawing.Size(28, 28);
+            this.toolStripSave.Text = "&Save";
+            this.toolStripSave.Click += new System.EventHandler(this.savePlaylist);
+            // 
+            // toolStripDuplicate
+            // 
+            this.toolStripDuplicate.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.toolStripDuplicate.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripDuplicate.Enabled = false;
+            this.toolStripDuplicate.Image = global::Kodi_M3U_IPTV_Editor.Properties.Resources.edit;
+            this.toolStripDuplicate.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripDuplicate.Margin = new System.Windows.Forms.Padding(5, 1, 0, 2);
+            this.toolStripDuplicate.Name = "toolStripDuplicate";
+            this.toolStripDuplicate.Size = new System.Drawing.Size(28, 28);
+            this.toolStripDuplicate.Text = "Duplicate Channel";
+            this.toolStripDuplicate.Click += new System.EventHandler(this.toolStripDuplicate_Click);
             // 
             // Editor
             // 
