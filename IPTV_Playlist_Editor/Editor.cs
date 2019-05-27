@@ -386,7 +386,7 @@ namespace Kodi_M3U_IPTV_Editor
                 file.WriteLine("#EXTINF:" + "0" + ", tvg-id=\"" + channels[i].EPG + "\" " + "tvg-logo=\"" + channels[i].Image + "\" " + "tvg-name=\"" + channels[i].Name  + "\" " + " group-title=\"" + channels[i].Group + "\"" + "," + channels[i].Name);
                 //file.WriteLine("#EXTTV:" + channels[i].Tag.Replace(",", "-") + ";" + channels[i].Language + ";" + channels[i].EPG + ((channels[i].Image.Trim().Length>0) ? ";"+channels[i].Image : ""));
                 file.WriteLine(channels[i].IP );
-                file.WriteLine();
+                //file.WriteLine();
             }
             file.Close();
         }
@@ -689,6 +689,37 @@ namespace Kodi_M3U_IPTV_Editor
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             updatechannels();
+        }
+
+        private void groupsToolStripButton_Click(object sender, EventArgs e)
+        {
+            if (channels.Count > 0)
+            {
+                using (var form = new Groups(channels.Select(c => c.Group).ToList()))
+                {
+                    var result = form.ShowDialog();
+                    if (result == DialogResult.OK)
+                    {
+                        List<GroupObj> vals = form.DeleteGroupList;            //values preserved after close
+                        List<string> deleteGroupVals = vals.Select(v => v.Group.Trim().ToUpper()).ToList();
+
+                        SortableBindingList<Channel> newChannelList = new SortableBindingList<Channel>();
+                        foreach (Channel channel in channels)
+                        {
+                            string group = channel.Group.Trim().ToUpper();
+                            if (!deleteGroupVals.Contains(group))
+                            {
+                                newChannelList.Add(channel);
+                            }
+                        }
+
+                        channels = newChannelList;
+
+                    }
+                }
+
+                alertSave();
+            }
         }
 
        
